@@ -1,0 +1,97 @@
+=========================================================
+                AltoiDS Wiring Diagram (ASCII)
+=========================================================
+                    +----------------------+
+                    |   Radxa Zero 3W      |
+                    |   (GPIO Header)      |
+                    +----------+-----------+
+                               |
+   -------------------------------------------------------------
+   | GPIO |  Function   | Connection Details
+   -------------------------------------------------------------
+   |  5   | UP          | 3.3V → 10kΩ → GPIO 5 → Switch → GND
+   |  6   | DOWN        | 3.3V → 10kΩ → GPIO 6 → Switch → GND
+   | 13   | LEFT        | 3.3V → 10kΩ → GPIO 13 → Switch → GND
+   | 19   | RIGHT       | 3.3V → 10kΩ → GPIO 19 → Switch → GND
+   |
+   | 16   | A Button    | 3.3V → 10kΩ → GPIO 16 → Switch → GND
+   | 20   | B Button    | 3.3V → 10kΩ → GPIO 20 → Switch → GND
+   | 21   | X Button    | 3.3V → 10kΩ → GPIO 21 → Switch → GND
+   | 26   | Y Button    | 3.3V → 10kΩ → GPIO 26 → Switch → GND
+   |
+   | 17   | START       | 3.3V → 10kΩ → GPIO 17 → Switch → GND
+   | 27   | SELECT      | 3.3V → 10kΩ → GPIO 27 → Switch → GND
+   |
+   |  4   | POWER BTN   | 3.3V → 10kΩ → GPIO 4 → Switch → GND
+   |
+   | MOSI | Display SPI | → ILI9341 DIN (MOSI)
+   | MISO | Display SPI | → (not connected)
+   | SCLK | Display SPI | → ILI9341 CLK
+   | CE0  | Display SPI | → ILI9341 CS
+   |  25  | Display DC  | → ILI9341 D/C
+   |  24  | Display RST | → ILI9341 RESET
+   |  18  | Display LED | → ILI9341 LED (PWM for brightness)
+   |
+   | AUD  | Audio Out   | → 3.5mm Headphone Jack
+   -------------------------------------------------------------
+   | 3.3V | Logic Power | → Pull-up Resistors, ILI9341 VCC
+   | 5V   | System Pwr  | → From MT3608 Boost Converter
+   | GND  | Common GND  | → All Switches, Display, Audio Jack
+   -------------------------------------------------------------
+
+                    +-----------------------------+
+                    |      ILI9341 2.8" TFT       |
+                    +-----------------------------+
+                    | VCC   ← 3.3V                |
+                    | GND   ← GND                 |
+                    | CS    ← CE0 (SPI)           |
+                    | RESET ← GPIO 24             |
+                    | D/C   ← GPIO 25             |
+                    | MOSI  ← MOSI (SPI)          |
+                    | SCLK  ← SCLK (SPI)          |
+                    | LED   ← GPIO 18 (PWM)       |
+                    +-----------------------------+
+
+   ====================== Power System =========================
+
+   LiPo Battery (3.7V 2000mAh)
+        |
+        ↓
+   [Toggle Power Switch] ← Physical on/off
+        |
+        ↓
+   +-----------+
+   |  TP4056   | ← USB Micro (for charging)
+   | Charger   |
+   +-----------+
+        |
+        ↓ (3.0-4.2V)
+   +-------------+
+   |  MT3608     |
+   | Boost Conv. | → Adjustable to 5V output
+   +-------------+
+        |
+        ↓ (5V regulated)
+   +-------------------+
+   | Radxa Zero 3W     |
+   | ILI9341 Display   |
+   +-------------------+
+
+   ====================== Audio System =========================
+   
+   Radxa Audio Out (GPIO Header or 3.5mm if present)
+        |
+        ↓
+   3.5mm Panel-Mount Jack → Headphones
+
+   ======================= Notes ===============================
+   - All 10kΩ resistors are pull-ups (GPIO reads HIGH when 
+     button not pressed, LOW when pressed)
+   - TP4056 charges LiPo when USB is connected
+   - MT3608 must be adjusted to output exactly 5V before 
+     connecting to Radxa
+   - Toggle switch provides hard power cutoff
+   - All grounds MUST be tied together (common ground rail)
+   - GPIO 18 (PWM) allows brightness control for display 
+     backlight
+   - SPI must be enabled in Radxa config before display works
