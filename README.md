@@ -1,2 +1,10 @@
 # AltoiDS
-AltoiDS is a concept for a tiny handheld gaming console inspired by classic systems from NES to DS. The idea is to fit a small single-board computer like a Raspberry Pi Zero 2 W or Radxa Zero 3W and a small TFT screen inside an XL Altoids tin using 3D-printed internal shells for buttons, controls, and battery.
+A concept for fitting a complete retro gaming emulator into an XL Altoids tin. The challenge is cramming a functional handheld console into a space designed for mints while keeping it playable and portable.
+## The Concept
+Take classic gaming systems (NES, Game Boy, SNES, Genesis) and squeeze them into pocket-sized hardware. The design centers around a Radxa Zero 3W single-board computer paired with a 2.8" SPI display. Full gaming controls include a D-pad, ABXY buttons, Start, and Select. Audio output through a 3.5mm headphone jack. A 2000mAh LiPo battery powers everything with onboard charging and voltage regulation to keep the system stable.
+## Design Approach
+The build avoids custom PCBs in favor of modular components and 3D-printed mounting solutions. Tactile switches connect directly to GPIO pins with pull-up resistors to handle button inputs. The screen mounts to the lid of the tin, visible when opened. Internal 3D-printed shells organize and secure the electronics, buttons, and battery without permanent modifications to the enclosure.
+Button sizing varies by function: 12x12mm switches for primary controls (ABXY and directional), smaller 6x6mm switches for secondary functions (Start/Select). Everything connects through dupont wiring to keep assembly flexible and repairable.
+## The Constraints
+This concept exists within Hack Club's Blueprint challenge framework, which provides up to $400 for hardware. The goal is building something functional within budget while exploring how embedded systems handle emulation and how far miniaturization can go before usability breaks down.
+The XL Altoids tin defines the physical limits. Every component choice considers space, power draw, and thermal management. The Radxa Zero 3W was chosen for its balance of processing power and compact form factor. The display size represents the largest screen that fits while leaving room for controls and electronics.
