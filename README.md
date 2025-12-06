@@ -1,16 +1,38 @@
 # AltoiDS
-A concept for fitting a complete retro gaming emulator into an XL Altoids tin. The challenge is cramming a functional handheld console into a space designed for mints while keeping it playable and portable.
-## The Concept
-Take classic gaming systems (NES, Game Boy, SNES, Genesis) and squeeze them into pocket-sized hardware. The design centers around a Radxa Zero 3W single-board computer paired with a 2.8" SPI display. Full gaming controls include a D-pad, ABXY buttons, Start, and Select. Audio output through a 3.5mm headphone jack. A 2000mAh LiPo battery powers everything with onboard charging and voltage regulation to keep the system stable.
-## Design Approach
-The build avoids custom PCBs in favor of modular components and 3D-printed mounting solutions. Tactile switches connect directly to GPIO pins with pull-up resistors to handle button inputs. The screen mounts to the lid of the tin, visible when opened. Internal 3D-printed shells organize and secure the electronics, buttons, and battery without permanent modifications to the enclosure.
-Button sizing varies by function: 12x12mm switches for primary controls (ABXY and directional), smaller 6x6mm switches for secondary functions (Start/Select). Everything connects through dupont wiring to keep assembly flexible and repairable.
-## The Constraints
-This concept exists within Hack Club's Blueprint challenge framework, which provides up to $400 for hardware. The goal is building something functional within budget while exploring how embedded systems handle emulation and how far miniaturization can go before usability breaks down.
-The XL Altoids tin defines the physical limits. Every component choice considers space, power draw, and thermal management. The Radxa Zero 3W was chosen for its balance of processing power and compact form factor. The display size represents the largest screen that fits while leaving room for controls and electronics.
-## Pricing
-Although this project would usually fit Tier 2 or 3 in scope, the total budget slightly exceeds $200 due to shipping costs. The project is classified as Tier 1 because the grant supports a higher-cost build that cannot be achieved at Tier 2 levels
-### Other
-I plan a DIY, hands-on assembly and wiring process, even without a custom PCB, including manually routing wires, configuring GPIO pins, soldering components, and designing 3D-printed mounts to maximize space and functionality inside the XL Altoids tin.
+AltoiDS is a compact retro gaming handheld built inside an XL Altoids tin. The goal is to fit a fully working emulator system into a small enclosure using off-the-shelf parts, simple wiring, and 3D printed internal mounts. This build does not use a custom PCB and stays within Hack Club Blueprint Tier 2 pricing.
+
+## Project Summary
+The system runs on a Radxa Zero 3W paired with a 2.8 inch ILI9341 SPI display. Controls use tactile switches wired directly to GPIO with pull-up resistors. Power comes from a 2000 mAh LiPo battery with a TP4056 charger and MT3608 boost converter. All components are arranged and held in place using custom 3D printed brackets designed specifically for the interior layout of the XL tin.
+
+The main challenge is managing part placement, wiring paths, and structural stability inside the limited internal volume. CAD work so far includes exterior form testing and internal mounting prototypes to make sure components fit securely.
+
+## Hardware
+- Radxa Zero 3W  
+- 2.8 inch SPI display (ILI9341)  
+- 12x12 mm tactile switches (D-pad and ABXY)  
+- 6x6 mm tactile switches (Start and Select)  
+- 2000 mAh LiPo battery  
+- TP4056 charge module  
+- MT3608 boost converter  
+- 10k resistor kit for GPIO pull-ups  
+- 3.5 mm headphone jack (optional)  
+- Dupont wires and soldered connections  
+- 3D printed mounts for the screen, buttons, battery, and Radxa board  
+
+## Software Setup
+A lightweight Linux image is configured for the Radxa with emulators for NES, SNES, Game Boy, Game Boy Color, and Genesis. GPIO input mapping and display configuration will be finalized once all hardware is installed.
+
+## Blueprint Tier
+The total cost is about **190 dollars including shipping**, which places the project inside **Tier 2**. The project uses modular wiring and 3D printed structures instead of a custom PCB to stay within budget.
+
+## Build Method
+The assembly is fully DIY:
+- Soldering and routing all wiring manually  
+- Connecting buttons directly to GPIO  
+- Building the layout using 3D printed brackets  
+- Fitting components without altering the tin  
+- Testing power, input, and display in stages  
+
+## Images
 ![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-3-25%20%282%29/image%20%282%29.webp)
 ![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-5-25/image%20(1).png)
