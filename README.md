@@ -10,7 +10,7 @@ This concept exists within Hack Club's Blueprint challenge framework, which prov
 The XL Altoids tin defines the physical limits. Every component choice considers space, power draw, and thermal management. The Radxa Zero 3W was chosen for its balance of processing power and compact form factor. The display size represents the largest screen that fits while leaving room for controls and electronics.
 ## Pricing
 Although this project would usually fit Tier 2 or 3 in scope, the total budget slightly exceeds $200 due to shipping costs. The project is classified as Tier 1 because the grant supports a higher-cost build that cannot be achieved at Tier 2 levels
-## Other
+### Other
 I plan a DIY, hands-on assembly and wiring process, even without a custom PCB, including manually routing wires, configuring GPIO pins, soldering components, and designing 3D-printed mounts to maximize space and functionality inside the XL Altoids tin.
 ![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-3-25%20%282%29/image%20%282%29.webp)
 ![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-5-25/image%20(1).png)
