@@ -9,3 +9,4 @@ Button sizing varies by function: 12x12mm switches for primary controls (ABXY an
 This concept exists within Hack Club's Blueprint challenge framework, which provides up to $400 for hardware. The goal is building something functional within budget while exploring how embedded systems handle emulation and how far miniaturization can go before usability breaks down.
 The XL Altoids tin defines the physical limits. Every component choice considers space, power draw, and thermal management. The Radxa Zero 3W was chosen for its balance of processing power and compact form factor. The display size represents the largest screen that fits while leaving room for controls and electronics.
 ![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-3-25%20%282%29/image%20%282%29.webp)
+![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-5-25/image%20(1).png)
