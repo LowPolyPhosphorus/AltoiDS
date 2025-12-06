@@ -1,37 +1,30 @@
-#!/usr/bin/env python3
-"""
-power_button_daemon.py
-Watches a GPIO pin for a long-press shutdown signal.
-"""
-
+# safe_poweroff.py
 import time
 import os
+import RPi.GPIO as GPIO
+from gpio_map import GPIO_MAP
 
-MOCK = False
+BUTTON = GPIO_MAP["POWER"]
 
-try:
-    import RPi.GPIO as GPIO
-except ImportError:
-    MOCK = True
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(BUTTON, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
+print("Poweroff daemon running...")
 
-SHUTDOWN_PIN = 4
-HOLD_TIME = 2.0  # seconds
+held_time = 0
 
+while True:
+    if GPIO.input(BUTTON) == 0:
+        held_time += 0.1
+        if held_time >= 2:
+            print("Shutdown triggered.")
+            os.system("sudo shutdown -h now")
+            time.sleep(5)
+        time.sleep(0.1)
+    else:
+        held_time = 0
+        time.sleep(0.1)
 
-def setup():
-    if MOCK:
-        print("[MOCK] Power button monitoring enabled.")
-        return
-
-    GPIO.setmode(GPIO.BCM)
-    GPIO.setup(SHUTDOWN_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-
-
-def button_pressed():
-    if MOCK:
-        return False
-    return GPIO.input(SHUTDOWN_PIN) == GPIO.LOW
 
 
 def main():
