@@ -64,5 +64,5 @@ The assembly is fully DIY:
 ![Image 1 WEBP](Altoids%20Images/image%20(1).webp)
 ![Image WEBP](Altoids%20Images/image.webp)
 ## Renders
-![Cutouts View](CAD%20Models/AltoiDS-cutouts_2025-Dec-07_03-07-17AM-000_CustomizedView42575634046.png)
-![Insert View](CAD%20Models/AltoiDS_Insert_2_2025-Dec-07_02-38-58AM-000_CustomizedView50920274100.png)
+![Cutouts View](CAD%Models/AltoiDS-cutouts-Render.png)
+![Insert View](CAD%Models/AltoiDSw\tin-Render.png)
