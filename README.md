@@ -57,6 +57,12 @@ The assembly is fully DIY:
 - Fitting components without altering the tin  
 - Testing power, input, and display in stages  
 
-## Images
+## Gallery
 ![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-3-25%20%282%29/image%20%282%29.webp)
 ![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-5-25/image%20(1).png)
+![Image 1 PNG](Altoids%20Images/image%20(1).png)
+![Image 1 WEBP](Altoids%20Images/image%20(1).webp)
+![Image WEBP](Altoids%20Images/image.webp)
+## Renders
+![Cutouts View](CAD%20Models/AltoiDS-cutouts_2025-Dec-07_03-07-17AM-000_CustomizedView42575634046.png)
+![Insert View](CAD%20Models/AltoiDS_Insert_2_2025-Dec-07_02-38-58AM-000_CustomizedView50920274100.png)
