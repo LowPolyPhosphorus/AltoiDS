@@ -33,12 +33,11 @@ The main challenge is managing part placement, wiring paths, and structural stab
 | ABXY Button Set (extras used for dpad) | Main controls | 1 | $7.61 | [AliExpress](https://www.aliexpress.us/item/3256808778757512.html) | $94.72 |
 | Start / Select 6x6mm buttons | Extra small buttons for start/select | 1 | $2.38 | [AliExpress](https://www.aliexpress.us/item/3256801442931013.html) | $97.10 |
 | 3.5 mm Panel‑Mount Audio Jack | Headphone output | 1 | $0.72 | [AliExpress](https://www.aliexpress.us/item/3256806443682492.html) | $97.82 |
-| Jumper Wires | Wiring for board + buttons + battery | 1 | $8.44 | [AliExpress](https://www.aliexpress.us/item/3256810340724400.html) | $106.26 |
-| XL‑sized Tin | Altoids tin or similar metal enclosure | 1 | $15.00 | [eBay](https://www.ebay.com/itm/227108602323) | $121.26 |
-| Toggle Power Switch | Supplies power on/off cleanly | 1 | $2.50 | [AliExpress](https://www.aliexpress.us/item/2251801856197853.html) | $123.76 |
-| Resistor Kit 1/4W | Resistors to prevent ghost presses from buttons | 1 | $5.98 | [Amazon](https://www.amazon.com/Resistor-Resistors-Assortment-Breadboard-Electronics/dp/B0F4P352BB) | $129.74 |
-| **Shipping (+fees)** | | | **$35.81** | | **$165.55** |
-
+| Dupont Jumper Wires | Wiring for board + buttons + battery | 1 | $8.44 | [AliExpress](https://www.aliexpress.us/item/3256810340724400.html) | $106.26 |
+| XL‑sized Tin | Altoids tin or similar metal enclosure | 1 | $22.95 | [eBay](https://www.ebay.com/itm/227108602323) | $129.21 |
+| Toggle Power Switch | Supplies power on/off cleanly | 1 | $2.50 | [AliExpress](https://www.aliexpress.us/item/2251801856197853.html) | $131.71 |
+| Resistor Kit 1/4W | Resistors to prevent ghost presses from buttons | 1 | $5.98 | [Amazon](https://www.amazon.com/Resistor-Resistors-Assortment-Breadboard-Electronics/dp/B0F4P352BB) | $137.69 |
+| **Shipping (+fees)** | | | **$35.81** | | **$173.50** |
 </details>
 
 ## Software Setup
