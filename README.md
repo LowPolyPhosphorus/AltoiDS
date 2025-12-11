@@ -55,7 +55,6 @@ The assembly is fully DIY:
 - Testing power, input, and display in stages  
 
 ## Gallery
-![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-3-25%20%282%29/image%20%282%29.webp)
 ![image](https://raw.githubusercontent.com/LowPolyPhosphorus/AltoiDS/main/Altoids%20Images/12-5-25/image%20(1).png)
 ![Image 1 PNG](Altoids%20Images/image%20(1).png)
 ![Image 1 WEBP](Altoids%20Images/image%20(1).webp)
