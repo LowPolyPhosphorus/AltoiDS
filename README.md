@@ -1,5 +1,5 @@
 # AltoiDS
-AltoiDS is a compact retro gaming handheld built inside an XL Altoids tin. The goal is to fit a fully working emulator system into a small enclosure using off-the-shelf parts, simple wiring, and 3D printed internal mounts. This build does not use a custom PCB and stays within Hack Club Blueprint Tier 2 pricing.
+AltoiDS is a compact retro gaming handheld built inside an XL Altoids tin. The goal is to fit a fully working emulator system into a small enclosure using off-the-shelf parts, simple wiring, and 3D printed internal mounts.
 
 ## Project Summary
 The system runs on a Radxa Zero 3W paired with a 2.8 inch ILI9341 SPI display. Controls use tactile switches wired directly to GPIO with pull-up resistors. Power comes from a 2000 mAh LiPo battery with a TP4056 charger and MT3608 boost converter. All components are arranged and held in place using custom 3D printed brackets designed specifically for the interior layout of the XL tin.
