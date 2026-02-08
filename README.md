@@ -43,8 +43,8 @@ The main challenge is managing part placement, wiring paths, and structural stab
 ## Software Setup
 A lightweight Linux image is configured for the Radxa with emulators for NES, SNES, Game Boy, Game Boy Color, and Genesis. GPIO input mapping and display configuration will be finalized once all hardware is installed.
 
-## Blueprint Tier
-The total cost is about **190 dollars including shipping**, which places the project inside **Tier 2**. The project uses modular wiring and 3D printed structures instead of a custom PCB to stay within budget.
+## Cost
+The total cost is about **190 dollars including shipping**. The project uses modular wiring and 3D printed structures instead of a custom PCB to stay within budget.
 
 ## Build Method
 The assembly is fully DIY:
